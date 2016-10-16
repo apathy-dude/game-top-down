@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="8" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://textures/smooth_concrete_texture.jpg" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://sprites/fast-arrow.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://textures/cinder_block.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://scripts/scene_manager.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://scripts/ctrl_camera.gd" type="Script" index="4"></ext_resource>
+	<resource type="FixedMaterial" path="local://1">
+		<bool name="flags/visible"> True </bool>
+		<bool name="flags/double_sided"> False </bool>
+		<bool name="flags/invert_faces"> False </bool>
+		<bool name="flags/unshaded"> False </bool>
+		<bool name="flags/on_top"> False </bool>
+		<bool name="flags/lightmap_on_uv2"> True </bool>
+		<bool name="flags/colarray_is_srgb"> True </bool>
+		<int name="params/blend_mode"> 0 </int>
+		<int name="params/depth_draw"> 1 </int>
+		<real name="params/line_width"> 0 </real>
+		<bool name="fixed_flags/use_alpha"> False </bool>
+		<bool name="fixed_flags/use_color_array"> False </bool>
+		<bool name="fixed_flags/use_point_size"> False </bool>
+		<bool name="fixed_flags/discard_alpha"> False </bool>
+		<bool name="fixed_flags/use_xy_normalmap"> False </bool>
+		<color name="params/diffuse"> 1, 1, 1, 0 </color>
+		<color name="params/specular"> 0, 0, 0, 1 </color>
+		<color name="params/emission"> 0, 0, 0, 1 </color>
+		<int name="params/specular_exp"> 40 </int>
+		<real name="params/detail_mix"> 1 </real>
+		<int name="params/normal_depth"> 1 </int>
+		<int name="params/shader"> 0 </int>
+		<real name="params/shader_param"> 0.5 </real>
+		<int name="params/glow"> 0 </int>
+		<real name="params/point_size"> 1 </real>
+		<transform name="uv_xform"> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+		<resource name="textures/diffuse" external="1">  </resource>
+		<int name="textures/diffuse_tc"> 0 </int>
+		<resource name="textures/detail"></resource>		<int name="textures/detail_tc"> 0 </int>
+		<resource name="textures/specular"></resource>		<int name="textures/specular_tc"> 0 </int>
+		<resource name="textures/emission"></resource>		<int name="textures/emission_tc"> 0 </int>
+		<resource name="textures/specular_exp"></resource>		<int name="textures/specular_exp_tc"> 0 </int>
+		<resource name="textures/glow"></resource>		<int name="textures/glow_tc"> 0 </int>
+		<resource name="textures/normal"></resource>		<int name="textures/normal_tc"> 0 </int>
+		<resource name="textures/shade_param"></resource>		<int name="textures/shade_param_tc"> 0 </int>
+
+	</resource>
+	<resource type="FixedMaterial" path="local://2">
+		<bool name="flags/visible"> True </bool>
+		<bool name="flags/double_sided"> False </bool>
+		<bool name="flags/invert_faces"> False </bool>
+		<bool name="flags/unshaded"> False </bool>
+		<bool name="flags/on_top"> False </bool>
+		<bool name="flags/lightmap_on_uv2"> True </bool>
+		<bool name="flags/colarray_is_srgb"> True </bool>
+		<int name="params/blend_mode"> 0 </int>
+		<int name="params/depth_draw"> 1 </int>
+		<real name="params/line_width"> 0 </real>
+		<bool name="fixed_flags/use_alpha"> False </bool>
+		<bool name="fixed_flags/use_color_array"> False </bool>
+		<bool name="fixed_flags/use_point_size"> False </bool>
+		<bool name="fixed_flags/discard_alpha"> False </bool>
+		<bool name="fixed_flags/use_xy_normalmap"> False </bool>
+		<color name="params/diffuse"> 1, 1, 1, 0 </color>
+		<color name="params/specular"> 0, 0, 0, 1 </color>
+		<color name="params/emission"> 0, 0, 0, 1 </color>
+		<int name="params/specular_exp"> 40 </int>
+		<real name="params/detail_mix"> 1 </real>
+		<int name="params/normal_depth"> 1 </int>
+		<int name="params/shader"> 0 </int>
+		<real name="params/shader_param"> 0.5 </real>
+		<int name="params/glow"> 0 </int>
+		<real name="params/point_size"> 1 </real>
+		<transform name="uv_xform"> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+		<resource name="textures/diffuse" external="2">  </resource>
+		<int name="textures/diffuse_tc"> 0 </int>
+		<resource name="textures/detail"></resource>		<int name="textures/detail_tc"> 0 </int>
+		<resource name="textures/specular"></resource>		<int name="textures/specular_tc"> 0 </int>
+		<resource name="textures/emission"></resource>		<int name="textures/emission_tc"> 0 </int>
+		<resource name="textures/specular_exp"></resource>		<int name="textures/specular_exp_tc"> 0 </int>
+		<resource name="textures/glow"></resource>		<int name="textures/glow_tc"> 0 </int>
+		<resource name="textures/normal"></resource>		<int name="textures/normal_tc"> 0 </int>
+		<resource name="textures/shade_param"></resource>		<int name="textures/shade_param_tc"> 0 </int>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="83">
+				<string> "Node" </string>
+				<string> "script/script" </string>
+				<string> "floor_material" </string>
+				<string> "wall_material" </string>
+				<string> "select_arrow_texture" </string>
+				<string> "level_iterations" </string>
+				<string> "level_seed" </string>
+				<string> "level_width" </string>
+				<string> "level_depth" </string>
+				<string> "level_height" </string>
+				<string> "wall_height" </string>
+				<string> "tile_size" </string>
+				<string> "Camera" </string>
+				<string> "_import_transform" </string>
+				<string> "transform/local" </string>
+				<string> "projection" </string>
+				<string> "fov" </string>
+				<string> "near" </string>
+				<string> "far" </string>
+				<string> "keep_aspect" </string>
+				<string> "current" </string>
+				<string> "visible_layers" </string>
+				<string> "environment" </string>
+				<string> "h_offset" </string>
+				<string> "v_offset" </string>
+				<string> "rotation_speed" </string>
+				<string> "move_speed" </string>
+				<string> "top_down_angle" </string>
+				<string> "min_height" </string>
+				<string> "max_height" </string>
+				<string> "DirectionalLight" </string>
+				<string> "layers" </string>
+				<string> "params/enabled" </string>
+				<string> "params/editor_only" </string>
+				<string> "params/bake_mode" </string>
+				<string> "params/energy" </string>
+				<string> "colors/diffuse" </string>
+				<string> "colors/specular" </string>
+				<string> "shadow/shadow" </string>
+				<string> "shadow/darkening" </string>
+				<string> "shadow/z_offset" </string>
+				<string> "shadow/z_slope_scale" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/blur_passes" </string>
+				<string> "projector" </string>
+				<string> "operator" </string>
+				<string> "shadow/mode" </string>
+				<string> "shadow/max_distance" </string>
+				<string> "shadow/split_weight" </string>
+				<string> "shadow/zoffset_scale" </string>
+				<string> "DirectionalLight1" </string>
+				<string> "Select_Arrow" </string>
+				<string> "geometry/visible" </string>
+				<string> "geometry/material_override" </string>
+				<string> "geometry/cast_shadow" </string>
+				<string> "geometry/receive_shadows" </string>
+				<string> "geometry/range_begin" </string>
+				<string> "geometry/range_end" </string>
+				<string> "geometry/extra_cull_margin" </string>
+				<string> "geometry/billboard" </string>
+				<string> "geometry/billboard_y" </string>
+				<string> "geometry/depth_scale" </string>
+				<string> "geometry/visible_in_all_rooms" </string>
+				<string> "geometry/use_baked_light" </string>
+				<string> "geometry/baked_light_tex_id" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "modulate" </string>
+				<string> "opacity" </string>
+				<string> "pixel_size" </string>
+				<string> "axis" </string>
+				<string> "flags/transparent" </string>
+				<string> "flags/shaded" </string>
+				<string> "flags/alpha_cut" </string>
+				<string> "texture" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "Sprite3D" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 5 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="241"> 				-1, -1, 0, 0, -1, 11, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 6, 8, 6, 9, 5, 10, 7, 11, 5, 0, 0, 0, 12, 12, -1, 18, 13, 8, 14, 9, 15, 10, 16, 11, 17, 12, 18, 13, 19, 5, 20, 14, 21, 15, 22, 16, 23, 17, 24, 17, 1, 18, 25, 19, 26, 20, 27, 11, 28, 21, 29, 22, 0, 0, 0, 30, 30, -1, 21, 13, 8, 14, 23, 31, 5, 32, 24, 33, 14, 34, 10, 35, 25, 36, 26, 37, 26, 38, 14, 39, 17, 40, 27, 41, 17, 42, 11, 43, 25, 44, 16, 45, 10, 46, 10, 47, 17, 48, 28, 49, 29, 0, 0, 0, 30, 50, -1, 21, 13, 8, 14, 30, 31, 5, 32, 24, 33, 14, 34, 10, 35, 25, 36, 26, 37, 26, 38, 14, 39, 17, 40, 27, 41, 17, 42, 11, 43, 25, 44, 16, 45, 10, 46, 10, 47, 17, 48, 28, 49, 29, 0, 0, 0, 82, 51, -1, 32, 13, 8, 31, 5, 52, 24, 53, 16, 54, 5, 55, 24, 56, 17, 57, 17, 58, 17, 59, 14, 60, 14, 61, 14, 62, 14, 63, 14, 64, 10, 65, 14, 66, 31, 67, 24, 68, 14, 69, 26, 70, 25, 71, 32, 72, 33, 73, 24, 74, 14, 75, 10, 76, 3, 77, 5, 78, 5, 79, 10, 80, 14, 81, 34, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="35" shared="false">
+				<resource  external="0">  </resource>
+				<resource  resource_type="Material" path="local://1">  </resource>
+				<resource  resource_type="Material" path="local://2">  </resource>
+				<resource  external="3">  </resource>
+				<int> 6 </int>
+				<int> 1 </int>
+				<int> 128 </int>
+				<int> 3 </int>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+				<transform> 1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 10, 5 </transform>
+				<int> 0 </int>
+				<real> 60 </real>
+				<real> 0.1 </real>
+				<real> 250 </real>
+				<bool> False </bool>
+				<int> 1048575 </int>
+				<resource name=""></resource>				<real> 0 </real>
+				<resource  external="4">  </resource>
+				<real> 5 </real>
+				<real> 10 </real>
+				<int> 5 </int>
+				<int> 20 </int>
+				<transform> 1.22474, 0, 1.22474, -0.866025, 1.22474, 0.866025, -0.866025, -1.22474, 0.866025, 0, 100, 0 </transform>
+				<bool> True </bool>
+				<real> 1 </real>
+				<color> 1, 1, 1, 1 </color>
+				<real> 0.05 </real>
+				<real> 0.5 </real>
+				<real> 2 </real>
+				<transform> -1.22474, 0, -1.22474, 0.866025, 1.22474, -0.866025, 0.866025, -1.22474, -0.866025, 0, 100, 0 </transform>
+				<vector2> 0, 0 </vector2>
+				<real> 0.002 </real>
+				<int> 2 </int>
+				<rect2> 0, 0, 0, 0 </rect2>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
