@@ -14,7 +14,9 @@ export var tile_size = 1
 
 var input_states = preload("res://scripts/button_state.gd")
 var map_generator = preload("res://scripts/map_generator.gd")
+var level_builder = preload("res://scripts/level_builder.gd")
 var unit = preload("res://scripts/unit.gd")
+var map = preload("res://scripts/level.gd")
 
 var btn_refresh = input_states.new("refresh")
 
@@ -54,7 +56,7 @@ func _fixed_process(delta):
 		var z = floor(result.z / level.tile_size)
 		var y = floor(result.y / level.wall_height)
 
-		var idx = map_generator.get_floor_index(level, x, y, z)
+		var idx = level.get_floor_index(x, y, z)
 		var tile = 0
 
 		if idx >= 0 && idx < level.level_floor.size():
@@ -80,7 +82,7 @@ func _fixed_process(delta):
 		var z = floor(result.z / level.tile_size)
 		var y = floor(result.y / level.wall_height)
 		
-		var idx = map_generator.get_floor_index(level, x, y, z)
+		var idx = level.get_floor_index(x, y, z)
 		var tile = 0
 
 		if idx >= 0 && idx < level.level_floor.size():
@@ -108,23 +110,26 @@ func _ready():
 	select_sprite.set_pixel_size(0.002)
 	select_sprite.hide()
 
-	level = map_generator.generate({
-		level_seed = level_seed,
-		width = level_width,
-		depth = level_depth,
-		height = level_height,
-		wall_height = wall_height,
-		tile_size = tile_size,
-		floor_materials = [floor_material],
-		wall_materials = [wall_material]
-	})
+	level = map.new()
+	level.level_seed = level_seed
+	level.width = level_width
+	level.depth = level_depth
+	level.height = level_height
+	level.wall_height = wall_height
+	level.tile_size = tile_size
+	level.floor_materials = [floor_material]
+	level.wall_materials = [wall_material]
+
+	level = map_generator.gen_noise(level)
 
 	for i in range(level_iterations):
-		level = map_generator.generate(level)
+		level = map_generator.gen_cellular_automata(level)
 
-	level = map_generator.build_mesh(level)
-	level = map_generator.build_static_body(level)
-	level = map_generator.combine_mesh_and_body(level)
+	level = map_generator.gen_walls(level)
+
+	level = level_builder.build_mesh(level)
+	level = level_builder.build_static_body(level)
+	level.combine_mesh_and_body()
 
 	var new_unit = unit.new({
 		position = Vector3(20, 0, 20)
